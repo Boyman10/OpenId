@@ -1,0 +1,14 @@
+server:
+  port: 8200
+security:
+  oauth2:
+    client:
+      clientId: micro-app
+      clientSecret: eedca3b1-7170-402c-994f-370fa41445d6
+      accessTokenUri: http://localhost:8180/auth/realms/demo/protocol/openid-connect/token
+      userAuthorizationUri: http://localhost:8180/auth/realms/demo/protocol/openid-connect/auth
+      token-name: access_token
+      authenticationScheme: header
+      clientAuthenticationScheme: header
+    resource:
+      userInfoUri: http://localhost:8180/auth/realms/demo/protocol/openid-connect/userinfo
